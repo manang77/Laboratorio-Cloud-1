@@ -13,7 +13,7 @@ export const getServerPages = (data: GitUsersApiModelWithHeader): number => {
       return parseInt(
         link.slice(
           link.indexOf(`&page=`, link.indexOf(`rel="next"`)) + 6,
-          link.indexOf(link.indexOf(`>; rel="next"`))
+          link.indexOf(link.indexOf(`>; rel="last"`))
         )
       );
     }
